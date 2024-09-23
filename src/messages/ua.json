@@ -1,0 +1,25 @@
+{
+  "Home": {
+    "mainBannerTitle": "Вітаю!",
+    "mainBannerText": "Це тестовий додаток на NEXT.JS",
+    "title": "Заголовок",
+    "cardTitle": "Заголовок картки"
+  },
+  "LanguageSwitcher": {
+    "label": "Змінити Мову",
+    "locale": "{locale, select, ua {\uD83C\uDDFA\uD83C\uDDE6 Украінська} en{\uD83C\uDDFA\uD83C\uDDF8 Англійська} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "Тест"
+  },
+  "Blog": {
+    "title": "Блог"
+  },
+  "Navigation": {
+    "Home": "Головна",
+    "Blog": "Блог"
+  },
+  "SingleBlog": {
+    "Back": "Назад"
+  }
+}

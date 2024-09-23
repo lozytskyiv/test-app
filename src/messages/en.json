@@ -1,0 +1,25 @@
+{
+  "LanguageSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale, select, ua {\uD83C\uDDFA\uD83C\uDDE6 Ukrainian} en{\uD83C\uDDFA\uD83C\uDDF8 English} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "Test App"
+  },
+  "Home": {
+    "mainBannerTitle": "Welcome!",
+    "mainBannerText": "That's test NEXT.JS application",
+    "title": "Title",
+    "cardTitle": "Card Title"
+  },
+  "Blog": {
+    "title": "Blog"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "Blog": "Blog"
+  },
+  "SingleBlog": {
+    "Back": "Back"
+  }
+}

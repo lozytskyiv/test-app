@@ -1,0 +1,43 @@
+.postPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .backLink {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: grey;
+        transition: 0.3s;
+
+        &:hover {
+            color: #0a0a0a;
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #0a0a0a;
+        letter-spacing: 0.01em;
+    }
+
+    .postImage {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #0a0a0a;
+        line-height: 152%;
+        letter-spacing: 0.01em;
+    }
+}
+

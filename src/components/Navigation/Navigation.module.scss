@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    min-width: 400px;
+    gap: 10px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: grey;
+        transition: 0.3s;
+
+        &:hover {
+            color: #4c4c4c;
+        }
+
+        &.active {
+            pointer-events: none;
+            color: black;
+        }
+    }
+}
