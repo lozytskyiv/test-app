@@ -1,7 +1,7 @@
 import {useTranslations} from "next-intl";
 // libs
 
-import Image from "next/image";
+import InfoCard from "./InfoCard";
 // components
 
 import placeholder1 from "../../../assets/placeholder1.webp";
@@ -12,32 +12,21 @@ import styles from "../page.module.scss";
 
 const ThreeCardsBlock = () => {
   const t = useTranslations("Home");
+
+  const cards = [
+    {title: t("cardTitle"), image: placeholder1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium."},
+    {title: t("cardTitle"), image: placeholder1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium."},
+    {title: t("cardTitle"), image: placeholder1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium."},
+  ]
+
   return (
     <>
       <div className={styles.cardsBlock}>
         <h2>{t("title")}</h2>
         <div className={styles.threeCardsBlock}>
-          <div className={styles.infoCard}>
-            <Image src={placeholder1} alt="" />
-            <div className={styles.infoCardText}>
-              <h4>{t("cardTitle")}</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium.</p>
-            </div>
-          </div>
-          <div className={styles.infoCard}>
-            <Image src={placeholder1} alt="" />
-            <div className={styles.infoCardText}>
-              <h4>{t("cardTitle")}</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium.</p>
-            </div>
-          </div>
-          <div className={styles.infoCard}>
-            <Image src={placeholder1} alt="" />
-            <div className={styles.infoCardText}>
-              <h4>{t("cardTitle")}</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra maximus laoreet. Morbi et elit eu ex ornare luctus eu quis est. Fusce vitae enim consequat, facilisis tortor at, blandit metus. Donec sagittis tincidunt pretium.</p>
-            </div>
-          </div>
+          {cards.map(({title, image, description}, index) => (
+            <InfoCard key={index} image={image} title={title} description={description} />
+          ))}
         </div>
       </div>
     </>
